@@ -1,0 +1,13 @@
+eureka:
+   client:
+      serviceUrl:
+        defaultZone: http://localhost:8761/eureka/
+server:
+   port: 8902
+spring:
+   application:
+      name: service-feign
+#默认Feign断路器是关闭的
+feign:
+   hystrix:
+     enabled: true
